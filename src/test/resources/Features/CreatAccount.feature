@@ -7,8 +7,8 @@ Feature: Test the sign up flow
     Then user should redirect to homepage
 
     Examples: 
-      | firstname | Lastname | Email            | Password     | ConfirmaPassword |
-      | aaaas   | bbbb  | sss123@gmail.com | acdc@12344 | acdc@12344     |
+      | firstname | Lastname | Email                   | Password      | ConfirmaPassword |
+      | Riya      | Sharma   | riyasharma123@gmail.com | Riyatest@1234 | Riyatest@1234    |
 
   Scenario Outline: Validation of sign in flow for register user
     Given user launches the application
@@ -18,5 +18,5 @@ Feature: Test the sign up flow
     And a welcome message is displayed
 
     Examples: 
-      | Email            | Password     |
-      | sss123@gmail.com | acdc@12344 |
+      | Email                   | Password      |
+      | riyasharma123@gmail.com | Riyatest@1234 |
